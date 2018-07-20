@@ -30,7 +30,7 @@ This is an H2
 ```
 
 
-#intelliJ 단축키
+## intelliJ 단축키
 
 줄복사
 command + D, ctrl + D
