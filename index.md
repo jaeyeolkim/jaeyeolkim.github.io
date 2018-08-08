@@ -6,6 +6,7 @@ ibatis 에서 변환 작업 하면서 내용을 정리한다.
 OGNL 표현식은 'Y' 를 char 로 변환해서 코드 값을 가져가기 때문에
 java.lang.NumberFormatException: For input string: “Y” 와 같은 오류가 발생한다.
 ('YY' 와 같이 두 글자는 이상없지만 쌍따옴표로 통일하는 것이 좋겠다)
+<br/>
 ```
 <if test='FLAG != "Y"'>
 </if>
