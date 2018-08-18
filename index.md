@@ -5,7 +5,7 @@
   * ctrl + D(windows)
 
 * 줄삭제
-  * command + delete | backspace
+  * command + delete or backspace
   * ctrl + Y
 
 * 라인 합치기
@@ -13,51 +13,52 @@
   * ctrl + shift + J
 
 * 라인 옮기기
-  * option + shift + UP | DOWN
-  * alt + shift + UP | DOWN
+  * option + shift + UP or DOWN
+  * alt + shift + UP or DOWN
 
 * 구문제한 라인 옮기기
-  * command + shift + UP | DOWN
-  * ctrl + shift + UP | DOWN
+  * command + shift + UP or DOWN
+  * ctrl + shift + UP or DOWN
 
 * 속성 위치 변경
-  * command + shift + option + LEFT | RIGHT
-  * ctrl + shift + alt + LEFT | RIGHT
+  * command + shift + option + LEFT or RIGHT
+  * ctrl + shift + alt + LEFT or RIGHT
 
-인자값 즉시 보기
-command + P
-ctrl + P
+* 인자값 즉시 보기
+  * command + P
+  * ctrl + P
 
-코드 구현부 즉시 보기
-option + space
-shift + ctrl + I
+* 코드 구현부 즉시 보기
+  * option + space
+  * shift + ctrl + I
 
-doc 즉시 보기
-F1, ctrl + Q
+* doc 즉시 보기
+  * F1
+  * ctrl + Q
 
-단어별 이동
-alt + <,>
-ctrl + <,>
+* 단어별 이동
+  * alt + < or >
+  * ctrl + < or >
 
-단어별 선택
-shift + alt + <,>
-shift + ctrl + <,>
+* 단어별 선택
+  * shift + alt + < or >
+  * shift + ctrl + < or >
 
-라인 첫/끝 이동
-fn + <,>
-home, end
+* 라인 첫/끝 이동
+  * fn + < or >
+  * home, end
 
-라인 전체 선택
-shift + command(fn) + <,>
-shift + home, end
+* 라인 전체 선택
+  * shift + command(fn) + < or >
+  * shift + home, end
 
-page up/down
-fn + 위,아래
-pageup, pagedown
+* page up/down
+  * fn + 위 or 아래
+  * pageup or pagedown
 
-포커스 범위 한 단계씩 늘리기
-option + 위,아래
-ctrl + W(위), shift + ctrl + W(아래)
+* 포커스 범위 한 단계씩 늘리기
+  * option + 위 or 아래
+  * ctrl + W(위), shift + ctrl + W(아래)
 
 포커스 뒤로/앞으로 가기
 command + [,]
