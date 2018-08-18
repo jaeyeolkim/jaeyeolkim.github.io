@@ -1,78 +1,143 @@
-## mybatis 룰과 사용시 발생 가능한 오류 대응
-ibatis 에서 변환 작업 하면서 내용을 정리한다.
-<br/>
-<br/>
-> ### java.lang.NumberFormatException 오류 처리
-OGNL 표현식은 'Y' 를 char 로 변환해서 코드 값을 가져가기 때문에
-java.lang.NumberFormatException: For input string: “Y” 와 같은 오류가 발생한다.
-('YY' 와 같이 두 글자는 이상없지만 쌍따옴표로 통일하는 것이 좋겠다)
-<br/>
-```
-<if test='FLAG != "Y"'>
-</if>
-```
-<br/>
+## intelliJ 단축키
 
-> ### <code>\<if test='START_DATE != null and START_DATE != ""'></code> 의 의미
-참고로 변환기(https://github.com/mybatis/ibatis2mybatis) 사용시 ibatis 의 isNotEmpty 태그가 위와 같이 변환된다.
+* 줄복사
+  * command + D(mac)
+  * ctrl + D(windows)
 
-* empty 이면 <code>\<if test='START_DATE != ""'></code> 조건에 걸린다.
-```
-paramMap.put("START_DATE", "");
-<if test='START_DATE != ""'>
-</if>
-```
+* 줄삭제
+  * command + delete | backspace
+  * ctrl + Y
 
-* 속성이 존재하지 않으면 <code>\<if test='START_DATE != null'></code> 조건에 걸린다.
-```
-paramMap.remove("START_DATE");
-<if test='START_DATE != null'>
-</if>
-```
+* 라인 합치기
+  * ctrl + shift + J
+  * ctrl + shift + J
 
-* insert 나 update 시 map에 key가 없는 속성인 경우 <code>'null'</code> 과 같이 입력될 수 있으므로 주의해야 한다.<br/>
-즉, map 에 key 속성들이 모두 정의되거나 if 문으로 처리해주어야 한다.
-<br/>
+* 라인 옮기기
+  * option + shift + UP | DOWN
+  * alt + shift + UP | DOWN
 
-> ### foreach 
-```
-<foreach collection="APPROVAL_STATUS" item="item" separator="," close=")" open=" IN (">
-    #{APPROVAL_item} => 변환기
-</foreach>
-```
-* 변환기는 위와 같이 된다. 아래와 같이 수정해야 원하는 결과를 얻게 된다.
-```
-<foreach collection="APPROVAL_STATUS" item="item" separator="," close=")" open=" IN (">
-    '${item}'
-</foreach>
-```
-* 배열은 length 로 체크해주어야 한다.
-```
-<if test=' EDUCATION_DIV_LIST.length > 0'>
-  AND A1.EDUCATION_DIV_CODE 
-  <foreach collection="EDUCATION_DIV_LIST" item="item" separator="," close=")" open=" IN (">
-     '${item}'
-  </foreach>
-</if>
-```
-* 또는 open 에 넣어준다. 이 방법이 더 심플한 것 같다.
-```
-  <foreach collection="EDUCATION_DIV_LIST" item="item" separator="," close=")" open=" AND A1.EDUCATION_DIV_CODE IN (">
-     '${item}'
-  </foreach>
-```
-<br/>
+* 구문제한 라인 옮기기
+  * command + shift + UP | DOWN
+  * ctrl + shift + UP | DOWN
 
+* 속성 위치 변경
+  * command + shift + option + LEFT | RIGHT
+  * ctrl + shift + alt + LEFT | RIGHT
 
-> ### selectKey 에는 order="BEFORE" 선언하여 selectKey 가 먼저 실행되도록 하자
-미선언시 insert 후에 selectKey가 생성된다.
-```
-<selectKey ... order="BEFORE">
-```
-<br/>
+인자값 즉시 보기
+command + P
+ctrl + P
 
-> ### resultMap 선언시 jdbcType 변경
-```
-<result ... jdbcType="NUMBER" /> -> <result ... jdbcType="NUMERIC" /> 
-<result ... jdbcType="VARCHAR2" /> -> <result ... jdbcType="VARCHAR" /> 
-```
+코드 구현부 즉시 보기
+option + space
+shift + ctrl + I
+
+doc 즉시 보기
+F1, ctrl + Q
+
+단어별 이동
+alt + <,>
+ctrl + <,>
+
+단어별 선택
+shift + alt + <,>
+shift + ctrl + <,>
+
+라인 첫/끝 이동
+fn + <,>
+home, end
+
+라인 전체 선택
+shift + command(fn) + <,>
+shift + home, end
+
+page up/down
+fn + 위,아래
+pageup, pagedown
+
+포커스 범위 한 단계씩 늘리기
+option + 위,아래
+ctrl + W(위), shift + ctrl + W(아래)
+
+포커스 뒤로/앞으로 가기
+command + [,]
+ctrl + alt 좌,우
+
+멀티 포커스
+option + option + 아래
+ctrl + ctrl + 아래
+
+오류 라인 자동 포커스
+F2
+
+현재 파일에서 검색
+command + F
+ctrl + F
+
+현재 파일에서 교체
+command + R
+ctrl + R
+
+전체에서 검색
+command + shift + F
+ctrl + shift + F
+
+전체에서 교체
+command + shift + R
+ctrl + shift + R
+
+파일 검색
+shift + command + O
+shift + ctrl + N
+
+메소드 검색
+option + command + O
+shift + ctrl + alt + N
+
+액션 검색
+shift + command + A
+shift + ctrl + A
+
+최근 열었던 파일 목록 보기
+command + E
+ctrl + E
+
+최근 수정했던 파일 목록 보기
+shift + command + E
+shift + ctrl + E
+
+스마트 자동 완성
+ctrl + shift + space
+ctrl + shift + space
+
+스태틱 메소드 자동 완성
+ctrl + space * 2
+ctrl + space * 2
+
+getter/setter 생성자 자동완성
+command + N
+alt + insert
+
+override 메소드 자동완성
+ctrl + I
+ctrl + I
+
+Live Template 목록 보기
+command + J
+ctrl + J
+
+변수 추출하기
+command + option + V
+ctrl + alt + V
+
+파라미터 추출하기
+command + option + P
+ctrl + alt + P
+
+메소드 추출하기
+command + option + M
+ctrl + alt + M
+
+이너클래스 추출하기
+F6
+F6
