@@ -60,85 +60,85 @@
   * option + 위 or 아래
   * ctrl + W(위), shift + ctrl + W(아래)
 
-포커스 뒤로/앞으로 가기
-command + [,]
-ctrl + alt 좌,우
+* 포커스 뒤로/앞으로 가기
+  * command + [,]
+  * ctrl + alt 좌,우
 
-멀티 포커스
-option + option + 아래
-ctrl + ctrl + 아래
+* 멀티 포커스
+  * option + option + 아래
+  * ctrl + ctrl + 아래
 
-오류 라인 자동 포커스
-F2
+* 오류 라인 자동 포커스
+  * F2
 
-현재 파일에서 검색
-command + F
-ctrl + F
+* 현재 파일에서 검색
+  * command + F
+  * ctrl + F
 
-현재 파일에서 교체
-command + R
-ctrl + R
+* 현재 파일에서 교체
+  * command + R
+  * ctrl + R
 
-전체에서 검색
-command + shift + F
-ctrl + shift + F
+* 전체에서 검색
+  * command + shift + F
+  * ctrl + shift + F
 
-전체에서 교체
-command + shift + R
-ctrl + shift + R
+* 전체에서 교체
+  * command + shift + R
+  * ctrl + shift + R
 
-파일 검색
-shift + command + O
-shift + ctrl + N
+* 파일 검색
+  * shift + command + O
+  * shift + ctrl + N
 
-메소드 검색
-option + command + O
-shift + ctrl + alt + N
+* 메소드 검색
+  * option + command + O
+  * shift + ctrl + alt + N
 
-액션 검색
-shift + command + A
-shift + ctrl + A
+* 액션 검색
+  * shift + command + A
+  * shift + ctrl + A
 
-최근 열었던 파일 목록 보기
-command + E
-ctrl + E
+* 최근 열었던 파일 목록 보기
+  * command + E
+  * ctrl + E
 
-최근 수정했던 파일 목록 보기
-shift + command + E
-shift + ctrl + E
+* 최근 수정했던 파일 목록 보기
+  * shift + command + E
+  * shift + ctrl + E
 
-스마트 자동 완성
-ctrl + shift + space
-ctrl + shift + space
+* 스마트 자동 완성
+  * ctrl + shift + space
+  * ctrl + shift + space
 
-스태틱 메소드 자동 완성
-ctrl + space * 2
-ctrl + space * 2
+* 스태틱 메소드 자동 완성
+  * ctrl + space * 2
+  * ctrl + space * 2
 
-getter/setter 생성자 자동완성
-command + N
-alt + insert
+* getter/setter 생성자 자동완성
+  * command + N
+  * alt + insert
 
-override 메소드 자동완성
-ctrl + I
-ctrl + I
+* override 메소드 자동완성
+  * ctrl + I
+  * ctrl + I
 
-Live Template 목록 보기
-command + J
-ctrl + J
+* Live Template 목록 보기
+  * command + J
+  * ctrl + J
 
-변수 추출하기
-command + option + V
-ctrl + alt + V
+* 변수 추출하기
+  * command + option + V
+  * ctrl + alt + V
 
-파라미터 추출하기
-command + option + P
-ctrl + alt + P
+* 파라미터 추출하기
+  * command + option + P
+  * ctrl + alt + P
 
-메소드 추출하기
-command + option + M
-ctrl + alt + M
+* 메소드 추출하기
+  * command + option + M
+  * ctrl + alt + M
 
-이너클래스 추출하기
-F6
-F6
+* 이너클래스 추출하기
+  * F6
+  * F6
