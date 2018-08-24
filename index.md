@@ -156,3 +156,7 @@
 * 사용하지 않는 import 정리(이클립스의 ctrl + shift + o)
   * ctrl + option + O
   * ctrl + alt + O
+
+* 파일 생성
+  * command + N
+  * alt + insert
