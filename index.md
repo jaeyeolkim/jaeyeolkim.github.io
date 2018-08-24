@@ -146,9 +146,13 @@
 
 ================================
 * 최근 편집 위치로 이동
-  * ?
+  * shift + command + backspace
   * ctrl + shift + backspace
   
 * 다음 동일한 단어 위치로 이동(이클립스의 ctrl + k)
-  * ?
-  * ctrl + F3
+  * ctrl + F3(command + G)
+  * ctrl + F3(F3)
+
+* 사용하지 않는 import 정리(이클립스의 ctrl + shift + o)
+  * ctrl + option + O
+  * ctrl + alt + O
