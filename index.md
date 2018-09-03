@@ -160,3 +160,7 @@
 * 파일 생성
   * command + N
   * alt + insert
+
+* 줄 편집
+  * option + mouse left button
+  * alt + mouse left button
