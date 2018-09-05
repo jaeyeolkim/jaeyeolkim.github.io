@@ -164,3 +164,7 @@
 * 줄 편집
   * option + mouse left button
   * alt + mouse left button
+
+* 대소문자 변경
+  * command + shift + U
+  * ctrl + shift + U
