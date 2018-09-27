@@ -24,3 +24,4 @@ $1<img$2alt="" />
 <img src="/common/images/common/dot.gif" align="absmiddle" alt="" />
 <img src="/common/images/common/dot.gif" alt="" />
 ```
+* _http://displaydev.blogspot.com/2017/01/alt.html_
