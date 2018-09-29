@@ -21,7 +21,7 @@
 * AWS
 
 ## 4. 기본 교양 도서
-* [자바로 배우는 핵심 자료구조와 알고리즘](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162240847&orderClick=LAG&Kc=){:target="_blank"}
+* [자바로 배우는 핵심 자료구조와 알고리즘](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162240847&orderClick=LAG&Kc=){:target="\_blank"}
 * 객체지향의 사실과 오해 역할, 책임, 협력 관점에서 본 객체지향(구매)
 * 레거시 코드 활용 전략
 * 리팩토링: 코드 품질을 개선하는 객체지향 사고법(회사)
