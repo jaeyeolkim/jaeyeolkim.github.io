@@ -1,6 +1,3 @@
-# jaeyeolkim.github.io
-<hr>
-
 # 2018~2019 나의 백엔드 학습 로드맵
 ## 1. java
 ### 1) java8
