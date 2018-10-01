@@ -43,7 +43,7 @@
   * <code>\<html></code> -> <code>\<html lang="ko"></code>
 
 * (18) 표의 구성
-  * <caption>과 <th> 태그가 존재해야 한다.
+  * \<caption>과 \<th> 태그가 존재해야 한다.
   ```html
   <table>
    <thead><th colspan="2"></th></thead>
