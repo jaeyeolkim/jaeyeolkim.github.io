@@ -18,10 +18,10 @@
 
 ### 웹접근성 주 변경점
 > openWAX에서 사용하는 항목 기준으로 작성
-* 1. 적절한 대체 텍스트 제공
+* (1) 적절한 대체 텍스트 제공
   * <code>img alt="필수"</code>
   
-* 12. 건너뛰기 링크
+* (12) 건너뛰기 링크
   * 순수하게 javascript 사용시에는 button으로 변경
   ```html
   <a href="javascript:alert('네이버');">네이버</a>
@@ -32,7 +32,7 @@
   <a onclick="alert('네이버')" role="button">네이버</a>
   ```
   
-* 13. 제목 제공
+* (13) 제목 제공
   * <code>iframe title="필수"</code>
   * <code>head 내의 title 존재</code>
 
