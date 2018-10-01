@@ -40,4 +40,4 @@ gridView11.onGetEditValue = function (grid, index, editResult) {
   }
 };
 ```
-* _kotiti ModelPartEd.jsp 작업중_
+* _kotiti project ModelPartEd.jsp 작업중_
