@@ -15,7 +15,7 @@ gridView01.onCurrentChanging =  function (grid, oldIndex, newIndex){
   var provider = grid.getDataSource();
   var fieldName = newIndex.fieldName;
   if(fieldName === 'VERIFY_CODE'){
-    <%-- 환경기준서 선택시 조회해 둔 환경기준서 데이터셋(dataProvider21)에서 dropdown list를 가져온다 --%>
+    <%-- 환경기준서 선택시 데이터셋(dataProvider21)을 조회하여 해당 dropdown list를 가져온다 --%>
     var envSeq = provider.getValue(newIndex.dataRow, 'ENV_SEQ');
     var jsonRows = dataProvider21.getJsonRows(0, -1);
     var valuesList = new Array();
