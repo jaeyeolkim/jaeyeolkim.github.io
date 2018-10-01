@@ -49,7 +49,7 @@
    <thead><th colspan="2"></th></thead>
    <caption>표의 제목</caption>
   ```
-  * <thead>없이도 <th>태그가 있으면 통과된다.
+  * <code>\<thead></code>없이도 <code>\<th></code>태그가 있으면 통과된다.
 
 * (19) 레이블 제공
   * 웹표준과 동일(label for="요소의 id")
