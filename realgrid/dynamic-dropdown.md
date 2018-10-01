@@ -1,6 +1,5 @@
 ## 동적으로 dropdown 생성하기
-* 선택하는 기준에 따라 dropDown list가 달라진다.
-* 또한 행마다 다르다.
+> 선택하는 기준에 따라 dropDown list가 달라진다. 또한 행마다 다른 경우이다.
 
 ### 샘플
 * <code>labelField</code> 에 보여질 컬럼을 지정한다.
@@ -42,3 +41,4 @@
         }
       };
 ```
+* _kotiti ModelPartEd.jsp 작업중_
