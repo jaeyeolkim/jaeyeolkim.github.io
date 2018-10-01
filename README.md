@@ -16,9 +16,10 @@
 
 ## 3. 기타 필수 요소
 * junit
+* docker
+* AWS
 * jenkins
 * gradle
-* AWS
 
 ## 4. 기본 교양 도서
 * [자바로 배우는 핵심 자료구조와 알고리즘](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162240847&orderClick=LAG&Kc=)
