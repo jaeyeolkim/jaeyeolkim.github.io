@@ -7,7 +7,7 @@
 ```javascript
 {name : "VERIFY_CODE", header : {text : '검증방법'}, width : 200, lookupDisplay: true, editor: gridJs.dropDown(), labelField: 'VERIFY_NAME'}
 ```
-<br>
+
 * 두 개의 이벤트 처리가 필요하다.
   * onCurrentChanging : 동적으로 dropDown values, labels 구성
   * onGetEditValue : labelField에 보여질 텍스트 값을 설정
