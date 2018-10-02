@@ -1,5 +1,5 @@
 ## 동적으로 dropdown 생성하기
-> 팝업을 통해 선택하는 기준에 따라 전체 dropDown list가 결정된다.
+> 팝업을 통해 선택하는 기준에 따라 전체 dropDown list가 결정된다.  
 > 또한, 클릭하는 행마다 그 list중에서 코드가 일치하는 항목만 보여져야 하는 상황이다.
 
 * <code>labelField</code> 에 보여질 컬럼을 지정한다.
