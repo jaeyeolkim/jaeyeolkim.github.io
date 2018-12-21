@@ -1,7 +1,11 @@
 ## favicon.ico
 
+
+### favicon
+![favicon](favicon_chrome.PNG)
+
 ```java
-http://localhost:8080/favicon.ico 404 (Not Found)
+http://localhost:8090/favicon.ico 404 (Not Found)
 ```
 - 개발자 도구를 보면 위와 같은 오류가 발생하는 경우가 있습니다.
 - favicon은 브라우저 주소창에 표시되는 사이트의 대표 아이콘입니다.
@@ -20,6 +24,3 @@ http://localhost:8080/favicon.ico 404 (Not Found)
   <mvc:exclude-mapping path="/static/**"/>
 </mvc:interceptor>
 ```
-
-### 적용 완료
-![favicon](favicon_chrome.PNG)
