@@ -1,6 +1,6 @@
 ## favicon.ico
 
-```
+```java
 http://www.solutis.co.kr/favicon.ico 404 (Not Found)
 ```
 - 개발자 도구를 보면 위와 같은 오류가 발생하는 경우가 있습니다.
@@ -10,7 +10,7 @@ http://www.solutis.co.kr/favicon.ico 404 (Not Found)
 ### spring mvc favicon 설정
 1. webapp 경로에 favicon.ico 파일을 추가합니다.
 2. dispatcher-servlet.xml 수정
-```
+```xml
 <mvc:resources mapping="/favicon.ico" location="/favicon.ico"/>
 
 ...
