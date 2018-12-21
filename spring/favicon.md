@@ -20,3 +20,6 @@ http://www.solutis.co.kr/favicon.ico 404 (Not Found)
   <mvc:exclude-mapping path="/static/**"/>
 </mvc:interceptor>
 ```
+
+### 적용 완료
+![favicon](favicon_chrome.PNG)
