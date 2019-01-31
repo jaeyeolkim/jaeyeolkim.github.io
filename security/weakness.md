@@ -1,6 +1,6 @@
 # 보안 취약점 대응
 > EPD 취약점 처리 과정 중 공유가 필요한 내용들만 요약 정리 하였습니다.
-
+<br/>
 
 ## A. 위험도 높음
 ### 1.부적절한 자원 해제 (IO)
@@ -15,6 +15,7 @@ String fileName = request.getParameter("append_file_nm");
 //필터 적용
 fileName = doXssFilter(fileName);
 ```   
+<br/>
 
 ## B. 위험도 보통
 ### 1. 오류 상황 대응 부재
@@ -43,6 +44,21 @@ public void saveResult(Map<String, Object> paramMap) throws BizException{
 	}
 }
 ```
+
+### 3. 오류메시지를 통한 정보노출
+* catch 구문안에서 e.getMessage(), e.toString() 사용하면 검출 됨
+```java
+} catch (Exception e) {
+    LOGGER.error(getSolutisErrorMsg(e));
+}
+
+//SolutisStringUtil.java 에 아래 메소드 추가
+public static String getSolutisErrorMsg(Exception exception){
+    return null2string(exception);
+}
+```
+
+
 
 ### 9. Private 배열에 Public 데이터 할당 & Public 메소드로부터 반환된 Private 배열
 * Public으로 선언된 데이터 또는 메소드의 파라미터가 Private 배열에 저장되면, 외부에서 Private 배열에 접근할 수 있습니다.
