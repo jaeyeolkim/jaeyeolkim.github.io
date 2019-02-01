@@ -59,6 +59,24 @@ public void saveResult(Map<String, Object> paramMap) throws BizException{
 * catch 구문안에서 e.getMessage(), e.toString() 사용하면 검출 됨
 * getSolutisErrorMsg(e) 메소드를 사용한다.
 
+### 4. 중요한 자원에 대한 잘못된 권한 설정 (File)
+* 디렉토리/파일 생성시 접근 권한에 대한 설정이 없거나 잘못되어 있을 경우 탐지합니다.
+```java
+// 1) SolutisStringUtil.java 에 아래 메소드 추가
+public static void permissionMkdirs(File directory){
+	if(!directory.exists()){
+		//폴더 권한 설정 - 보안 취약점 대응[2019.01.29, kimjaeyeol]
+		directory.setExecutable(false, true);
+		directory.setReadable(true);
+		directory.setWritable(false, true);
+		directory.mkdirs();
+	}
+}
+
+// 2) permissionMkdirs(e) 사용하여 디렉토리 생성시 권한설정을 하도록 한다.
+permissionMkdirs(folder);
+```
+
 ### 9. Private 배열에 Public 데이터 할당 & Public 메소드로부터 반환된 Private 배열
 * Public으로 선언된 데이터 또는 메소드의 파라미터가 Private 배열에 저장되면, 외부에서 Private 배열에 접근할 수 있습니다.
 * Private 배열을 Public 메소드가 반환하면, 배열 주소값이 외부 공개됨으로써 외부에서 배열 수정이 가능해집니다.
