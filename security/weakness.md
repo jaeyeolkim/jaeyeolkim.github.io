@@ -20,7 +20,17 @@ fileName = doXssFilter(fileName);
 ## B. 위험도 보통
 ### 1. 오류 상황 대응 부재
 * catch 구문이 비어있을 경우 검출된다.
-* LOGGER.error(e) 를 찍어준다.
+```java
+// 1) SolutisStringUtil.java 에 아래 메소드 추가
+public static String getSolutisErrorMsg(Exception exception){
+    return null2string(exception);
+}
+
+// 2) getSolutisErrorMsg(e) 사용하여 로그를 찍어준다.
+} catch (Exception e) {
+    LOGGER.error(getSolutisErrorMsg(e));
+}
+```
 
 ### 2. 오류 상황 미수신
 * 예외를 발생시키면 반드시 처리해야 합니다.
@@ -47,18 +57,7 @@ public void saveResult(Map<String, Object> paramMap) throws BizException{
 
 ### 3. 오류메시지를 통한 정보노출
 * catch 구문안에서 e.getMessage(), e.toString() 사용하면 검출 됨
-```java
-} catch (Exception e) {
-    LOGGER.error(getSolutisErrorMsg(e));
-}
-
-//SolutisStringUtil.java 에 아래 메소드 추가
-public static String getSolutisErrorMsg(Exception exception){
-    return null2string(exception);
-}
-```
-
-
+* getSolutisErrorMsg(e) 메소드를 사용한다.
 
 ### 9. Private 배열에 Public 데이터 할당 & Public 메소드로부터 반환된 Private 배열
 * Public으로 선언된 데이터 또는 메소드의 파라미터가 Private 배열에 저장되면, 외부에서 Private 배열에 접근할 수 있습니다.
