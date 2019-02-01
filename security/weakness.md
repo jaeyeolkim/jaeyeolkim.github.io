@@ -73,11 +73,11 @@ public static void permissionMkdirs(File directory){
 	}
 }
 
-// 2) permissionMkdirs(e) 사용하여 디렉토리 생성시 권한설정을 하도록 한다.
+// 2) permissionMkdirs(folder) 사용하여 디렉토리 생성시 권한설정을 하도록 한다.
 permissionMkdirs(folder);
 ```
 
-### 9. Private 배열에 Public 데이터 할당 & Public 메소드로부터 반환된 Private 배열
+### 5. Private 배열에 Public 데이터 할당 & Public 메소드로부터 반환된 Private 배열
 * Public으로 선언된 데이터 또는 메소드의 파라미터가 Private 배열에 저장되면, 외부에서 Private 배열에 접근할 수 있습니다.
 * Private 배열을 Public 메소드가 반환하면, 배열 주소값이 외부 공개됨으로써 외부에서 배열 수정이 가능해집니다.
 ```java
@@ -106,3 +106,43 @@ public void setAuthViewMenuList(List<Map<String, Object>> authViewMenuList) {
 	}
 }
 ```
+
+<br/>
+
+## C. 위험도 낮음
+
+### 1. 적절하지 않은 난수값 사용
+* java.lang.Math.random() 사용 금지, java.util.Random 으로 대체한다.
+* SolutisStringUtil.getRandomPassword() 메소드 변경함.
+
+### 2. 이름 짓기 규칙 위반 (변수명)
+* 변수명, 메서드명 등 이름을 짓는데 반드시 지켜야할 규칙
+1. 대소문자 구별
+2. 키워드 사용 불가
+3. 첫문자는 숫자 불가
+4. 특수문자는 _와 $만 허용
+* 권장 규칙
+1. 패키지명 첫글자는 소문자
+2. 클래스명 첫글자는 대문자
+3. 변수명 첫글자는 소문자
+4. 메서드명 첫글자는 소문자
+5. 상수명은 모두 대문자
+```java
+// 상수이므로 모두 대문자이 'LOGGER' 를 표준으로 사용한다.
+private static final LOGGER = LogManager.getLogger()
+
+// serialVersionUID 선언하지 않고 자동 생성되도록 한다.
+```
+
+### 3. switch 구문 내의 default 부재
+* switch 구문은 반드시 default 구문을 작성해야 한다.
+
+### 4. Final 변경자 없는 상수
+* 변경되지 않는 멤버 상수는 final 을 선언해야 한다.
+```java
+// 멤버 상수는 final 이 없고 모두 대문자이어야 한다.
+private static int readableAuth = 1;
+// 권장 선언
+private static final int READABLE_AUTH = 1;
+```
+
