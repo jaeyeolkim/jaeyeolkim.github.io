@@ -146,3 +146,8 @@ private static int readableAuth = 1;
 private static final int READABLE_AUTH = 1;
 ```
 
+### 5. 불필요한 코드 (비어있는 함수) & 불필요한 코드 (비어있는 IF문) & 불필요한 코드 (비어있는 case문)
+* 메소드나 분기문의 내용이 비어있는 경우 검출된다.
+* 비어있는 함수는 @Override 메소드들이 주 대상이다.
+* 로깅 처리라도 해주어야 검출되지 않는다.
+* 구문 내에 주석문만 있어도 검출 대상이다.
