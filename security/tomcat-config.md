@@ -3,7 +3,7 @@
 ### 1. %TOMCAT_HOME% 하위에 사용하지 않는 폴더 삭제
 - /examples/
 - /docs/
-- /manager/
+- /manager/ 하위의 폴더만(manager 폴더는 삭제하면 안됨)
   - manager 는 사용할 경우 경로를 변경할 것
   
 ### 2. 메소드 허용
