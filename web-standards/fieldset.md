@@ -1,4 +1,4 @@
-# fieldset 속성을 사용하여 disabled 일괄 처리하기
+# fieldset 속성을 사용하여 form disabled 일괄 처리하기
 * 폼 안에 \<fieldset\> 태그를 사용하여 그룹화 할 수 있다.
 * 속성으로 disabled 를 갖기 때문에 폼 안에 여러 요소들을 묶어서 컨트롤할 수 있다.
 * 또한 \<fieldset\> 은 라벨인 \<legend\> 와 같이 사용된다.
