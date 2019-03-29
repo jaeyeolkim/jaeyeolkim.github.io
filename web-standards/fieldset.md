@@ -29,5 +29,5 @@
 </form>
 ```
 * 참고자료
-1. https://getbootstrap.com/docs/4.3/components/forms/
+1. https://getbootstrap.com/docs/4.3/components/forms/#disabled-forms
 2. https://developer.mozilla.org/ko/docs/Learn/HTML/Forms/
