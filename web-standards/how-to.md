@@ -15,7 +15,7 @@
 * label 제공
   * input(text, radio, checkbox), select 대상
   * <code>\<label for="요소의 id"></code>
- * <code>\<input type="radio" id="R1" name="R">\<label for="R1">라디오1\</label></code>
+  * <code>\<input type="radio" id="R1" name="R">\<label for="R1">라디오1\</label></code>
 
 ### 웹접근성 주 변경점
 > openWAX에서 사용하는 항목 기준으로 작성
