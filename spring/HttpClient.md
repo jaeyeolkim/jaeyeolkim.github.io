@@ -63,3 +63,10 @@ public class ApprovalTemplateLsController extends AbstractController {
 
 * dispatcher-servelt.xml 설정
   - Interceptor 에 해당 url에 대한 exclude-mapping path 설정이 필요한다.
+```xml
+<mvc:exclude-mapping path="/common/approval"/>
+<bean class="kr.co.solutis.common.interceptor.SessionCheckInterceptor"/>
+...
+<mvc:exclude-mapping path="/common/approval"/>
+<bean class="kr.co.solutis.common.interceptor.ControlReadInterceptor"/>
+```
