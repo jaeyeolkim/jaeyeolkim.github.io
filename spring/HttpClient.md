@@ -35,15 +35,15 @@ private String getHtmlBody(HttpServletRequest request){
 @RequestMapping("/approval/template")
 public class ApprovalTemplateLsController extends AbstractController {
 
-@RequestMapping(value = {"/type1/{param1}"}, method = {RequestMethod.GET})
-public void page(ParamVO paramVO, Map<String, Object> model, @PathVariable String param1) {
-	Map<String, Object> params = new HashMap<>();
-	logger.debug("param1={}", param1);
-	params.put("id", "oyejin");
-	params.put("name", "다람쥐");
-	model.put("params", params);
-    model.put("_returnPageUrl", "approval/ApprovalTemplate01");
-}
+    @RequestMapping(value = {"/type1/{param1}"}, method =   {RequestMethod.GET})
+    public void page(ParamVO paramVO, Map<String, Object> model,    @PathVariable String param1) {
+    	Map<String, Object> params = new HashMap<>();
+    	logger.debug("param1={}", param1);
+    	params.put("id", "oyejin");
+    	params.put("name", "다람쥐");
+    	model.put("params", params);
+        model.put("_returnPageUrl", "approval/ApprovalTemplate01");
+    }
 ```
 
 * jsp template
