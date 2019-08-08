@@ -6,7 +6,7 @@
   - 참고로 tibero5 버전에서는 tbMigrator 를 사용했었다.
   - tmax technet 에 로그인 후 다운로드 > 데이터베이스 > Tibero6 > 다운로드 > [tibero6-XXX.tar.gz](https://technet.tmaxsoft.com/ko/front/download/viewDownload.do?cmProductCode=0301&version_seq=PVER-20150504-000001&doc_type_cd=DN#binary)을 다운로드 한다.
   - 압축을 풀고 tibero6/client/bin/T-Up.zip 파일의 압축을 다시 푼다.
-  - T-Up/lib 경로에 ojdbc14.jar 파일을 복사한다.
+  - 오라클 접속을 위해 T-Up/lib 경로에 ojdbc14.jar 파일을 복사한다.
   - T-Up.x86_64.bat 파일을 실행하면 된다.
   - 각 유저에 DBA(with admin option) 권한을 부여해야 이관이 가능하다.
 * 테이블스페이스, 유저(스키마 - tibero는 유저와 스키마가 동일한 개념이다)는 이관시 생성을 시도한다.
