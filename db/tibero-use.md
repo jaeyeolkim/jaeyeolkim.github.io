@@ -29,7 +29,7 @@
 
 ## 프로젝트 적용하기
 * application.properties
-```
+```properties
 db.driverClassName=com.tmax.tibero.jdbc.TbDriver
 db.url=jdbc:tibero:thin:@ip:port:sid
 ```
