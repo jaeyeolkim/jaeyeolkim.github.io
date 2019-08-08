@@ -26,3 +26,22 @@
 * procedure 등의 작업도 가능하므로 tbAdmin 보다는 이 툴의 사용을 권장한다.
 * tmax technet 다운로드 > 데이터베이스 > Tibero > [Tibero Studio](https://technet.tmaxsoft.com/ko/front/download/viewDownload.do?cmProductCode=0301&version_seq=PVER-20140109-000004&doc_type_cd=DN#binary) 에서 다운로드 할 수 있다.
 * 압축을 풀고 TiberoStudio.exe 를 실행하여 사용하면 된다.
+
+## 프로젝트 적용하기
+* application.properties
+```
+db.driverClassName=com.tmax.tibero.jdbc.TbDriver
+db.url=jdbc:tibero:thin:@ip:port:sid
+```
+
+* pom.xml
+  - 먼저 tibero6-jdbc.jar 파일을 WEB-INF/lib 경로에 복사.
+```xml
+<dependency>
+    <groupId>solutis</groupId>
+    <artifactId>tibero6</artifactId>
+    <version>6</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/tibero6-jdbc.jar</systemPath>
+</dependency>
+```
