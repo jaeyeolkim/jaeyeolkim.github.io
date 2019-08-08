@@ -1,4 +1,4 @@
-# Tibero 유틸
+# Tibero 이관 및 프로젝트 적용
 > oracle -> tibero6, tbAdmin, TiberoStudio2
 
 ## oracle -> tibero6 DB 이관하기
