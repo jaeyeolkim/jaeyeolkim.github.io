@@ -153,6 +153,10 @@
   * ctrl + F3(command + G)
   * ctrl + F3(F3)
 
+* 다음 동일한 단어 선택(vs code의 command + D)
+  * ctrl + G
+  * ctrl + G
+  
 * 사용하지 않는 import 정리(이클립스의 ctrl + shift + o)
   * ctrl + option + O
   * ctrl + alt + O
